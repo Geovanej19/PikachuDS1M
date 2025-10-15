@@ -10,5 +10,5 @@ a{
 }
 
 ol, ul, li{
-    
+    list-style: none;
 }
