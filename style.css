@@ -139,4 +139,10 @@ footer{
         width: 100%;
 
     }
+    h1 {
+        align-items: start;
+        transform: translateY(40%);
+        flex-grow: 0;
+    }
+
 }
