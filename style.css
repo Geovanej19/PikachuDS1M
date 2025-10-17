@@ -32,7 +32,7 @@ main{
 
 .sombra{
     position: absolute;
-    font-size: 500px;
+    font-size: 26vw;
     color: #ffffff55;
     z-index: -999;
     top: 50%;
@@ -46,7 +46,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    font-size: 300px;
+    font-size: 22vw;
     color: rgb(255, 255, 255);
 }
 .container{
@@ -54,7 +54,7 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 64px;
+    padding: 0%;
 
 
 }
@@ -62,11 +62,7 @@ h1{
     font-size: 64;
     color: var(--secundary-color);
 }
-.descricao p{
-    font-size: 20px;
-    color: var(--secundary-color);
-    width: 500px;
-}
+
 .container a{
     width: 400px;
     height: 100px;
@@ -77,6 +73,10 @@ h1{
     font-size: 48px;
     color: white;
 }
+.descricao p{
+    text-align: none;
+}
+
 .pikachu{
     position: absolute;
     top: 50%;
@@ -86,5 +86,44 @@ h1{
 }
 
 footer{
-    background-color: rgb(254, 254, 254);
+    text-align: center;
+    color: var(--secundary-color);
+}
+
+@media (max-width: 768px){
+    body {
+        padding: 30px;
+    }
+    .sombra{
+        transform: translate(-50%, -180%);
+    }
+    main{
+        justify-content: space-between;
+    }
+    h1 {
+        align-items: start;
+        transform: translateY(40%);
+        flex-grow: 0;
+
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+    .descricao p{
+        text-align: center;
+    }
+    footer {
+        display: none;
+
+    }
+}
+
+/* MOBILE8 */
+@media (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
 }
